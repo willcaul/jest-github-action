@@ -11,7 +11,7 @@ import { createCoverageMap, CoverageMapData, CoverageSummary } from "istanbul-li
 import type { FormattedTestResults } from "@jest/test-result/build"
 
 const ACTION_NAME = "jest-github-action"
-const COVERAGE_HEADER = "# :open_umbrella: Code Coverage";
+const COVERAGE_HEADER = core.getInput("coverage-header", { required: false }) || "# :open_umbrella: Code Coverage";
 const CHAR_LIMIT = 60000;
 
 const rootPath = process.cwd();
