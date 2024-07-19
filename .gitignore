@@ -5,6 +5,7 @@ lib/
 # Editors
 .vscode
 .DS_Store
+.idea
 
 # Logs
 logs
